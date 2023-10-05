@@ -1,4 +1,4 @@
-# 2023-10-05-presentation
+# 2023-10-05-bibliographie
 Bibliographie pour la présentation sur l'hyper-orgue pour le groupe laboratoire de Caroline Traube du 5 octobre, 2023 :
 
 Alary, O. (2020). Vers une musique hantologique instrumentale: Réflexions sur l’écriture technomorphe dans le contexte de la musique instrumentale     contemporaine. https://papyrus.bib.umontreal.ca/xmlui/handle/1866/23593
