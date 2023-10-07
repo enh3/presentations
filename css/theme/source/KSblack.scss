@@ -1,0 +1,83 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/garamond/garamond.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #191919;
+
+$mainColor: #fff;
+$headingColor: #fff;
+
+$mainFontSize: 10px;
+$mainFont: 'garamond', garamond, serif;
+$headingFont: 'garamond', garamond, serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 300;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 1em;
+$heading2Size: 0.75em;
+$heading3Size: 0.5em;
+$heading4Size: 0.35em;
+$heading5Size: 0.75em;
+$heading6Size: 0.5em;
+$heading7Size: 0.25em;
+$heading8Size: 0.125em;
+$heading9Size: 0.0005em;
+
+// Change text colors against light slide backgrounds
+@include light-bg-text-color(#222);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+element.style {
+    font-weight: 50;
+}
+
+.reveal .slides {
+  height: 100%;
+  inset: 25% auto auto 25%;
+  transform: translate(-50%, -50%) scale(0.825);
+}
+}
+
+.reveal .slides>section {
+  min-height: 100%;
+}
+
+.reveal .slides>section>section {
+  min-height: 100%;
+}
+
+ul li{
+ font-size:8px;
+}
+
+.reveal .controls {
+	color: red;
+}
