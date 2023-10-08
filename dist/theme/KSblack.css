@@ -12,23 +12,24 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: #191919;
+  --r-background-color: #0c0c0c;
   --r-main-font: garamond, garamond, serif;
   --r-main-font-size: 55px;
   --r-main-color: #fff;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 15px 0;
   --r-heading-font: garamond, garamond, serif;
-  --r-heading-color: #fff;
+  --r-heading-color: #ECEDE9;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: none;
   --r-heading-text-shadow: none;
   --r-heading-font-weight: 300;
   --r-heading1-text-shadow: none;
+  --r-mission-size: 1.45em;
   --r-heading1-size: 0.55em;
   --r-heading2-size: 0.55em;
-  --r-heading3-size: 0.35em;
+  --r-heading3-size: 0.40em;
   --r-heading4-size: 0.30em;
   --r-heading5-size: 0.20em;
   --r-heading6-size: 0.23em;
@@ -73,6 +74,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 /*********************************************
  * HEADERS
  *********************************************/
+.reveal mission,
 .reveal title,
 .reveal name,
 .reveal h1,
@@ -90,6 +92,13 @@ section.has-light-background, section.has-light-background h1, section.has-light
   text-transform: var(--r-heading-text-transform);
   text-shadow: var(--r-heading-text-shadow);
   word-wrap: break-word;
+}
+
+.reveal mission {
+  font-size: var(--r-mission-size);
+  font-family: "EBGaramond12-Regular", serif;
+  margin: 50px 0 50px 100px;
+  display: block;
 }
 
 .reveal h1 {
@@ -421,6 +430,23 @@ element.style {
     height: 1px; /* Adjust the height of the bars as needed */
     background-color: #EC7C31; /* Set the color to orange or your desired color */
     margin: 10px 0; /* Adjust the margin to position the bars as needed */
-    width: 35%;
+    width: 32%;
     margin: 0px 0px 0px 85px;
+}
+
+/* Create a two-column layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.left-column {
+    flex: 1;
+    /* Adjust styling for the left-side text as needed */
+}
+
+.right-column {
+    flex: 1;
+    /* Adjust styling for the left-side text as needed */
 }
