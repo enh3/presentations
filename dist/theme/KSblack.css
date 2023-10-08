@@ -17,7 +17,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-main-font-size: 55px;
   --r-main-color: #fff;
   --r-block-margin: 20px;
-  --r-heading-margin: 0 0 20px 0;
+  --r-heading-margin: 0 0 15px 0;
   --r-heading-font: garamond, garamond, serif;
   --r-heading-color: #fff;
   --r-heading-line-height: 1.2;
@@ -29,7 +29,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-heading1-size: 0.55em;
   --r-heading2-size: 0.55em;
   --r-heading3-size: 0.35em;
-  --r-heading4-size: 0.25em;
+  --r-heading4-size: 0.30em;
   --r-heading5-size: 0.20em;
   --r-heading6-size: 0.23em;
   --r-code-font: monospace;
@@ -114,6 +114,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal h4 {
   font-size: var(--r-heading4-size);
   font-family: "Avenir-Light", sans-serif;
+  margin-bottom: 12px;
 }
 
 .reveal h5 {
@@ -169,7 +170,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal ul {
   display: inline-block;
   text-align: left;
-  margin: 0 0 0 0;
+  margin: 0 0 15px 0;
 }
 
 .reveal ol {
