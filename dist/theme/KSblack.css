@@ -520,3 +520,7 @@ body .reveal .invisible {
   left: 60%;
   text-align: right;
 }
+
+.reveal a {
+  font-size: .2em;
+}
