@@ -138,6 +138,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal h3 {
   font-size: var(--r-heading3-size);
   font-family: "Avenir-Light", sans-serif;
+  margin-bottom: 16px;
 }
 
 .reveal h4 {
@@ -225,7 +226,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal ul {
   display: inline-block;
   text-align: left;
-  margin: 0 0 15px 0;
+  margin: 0 0 6px 0;
 }
 
 .reveal ol {
@@ -505,7 +506,7 @@ body .reveal .invisible {
 .reveal li {
   font-size: var(--r-heading4-size);
   font-family: "Avenir-Light", sans-serif;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   max-width: 500px;
 }
 
@@ -523,4 +524,8 @@ body .reveal .invisible {
 
 .reveal a {
   font-size: .2em;
+}
+
+.reveal .tight {
+  margin-bottom: 4px;
 }
