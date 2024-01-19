@@ -8,6 +8,14 @@ section.has-light-background, section.has-light-background h1, section.has-light
   color: #222;
 }
 
+@font-face {
+  font-family: 'Avenir-Light';
+  src: url('fonts/avenir-light-webfont.woff') format('woff'),
+       url('fonts/avenir-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -529,3 +537,5 @@ body .reveal .invisible {
 .reveal .tight {
   margin-bottom: 4px;
 }
+
+
