@@ -1,0 +1,643 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="../dist/reset.css">
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/KSblack.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../plugin/highlight/monokai.css">
+		<style>
+			ul li{
+			 font-size:30px;
+			}
+			ol li{
+			 font-size:30px;
+			}
+			.reveal .controls {
+			 color: #0c0c0c;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="title.png">
+					<h1>Perspectives<br>contemporaines sur<br>l'hyper orgue :<br>concevoir, jouer et<br>écrire pour un orgue à<br>tuyaux Casavant<br>Frères augmenté.</h1>
+					<h6>Par Kjel Sidloski</h6>
+				</section>
+				<section>
+					<div class="container">
+						<div class="left-column">
+					    	<div class="bar" style="width: 64%"></div>
+					    		<mission>Mission<br>du projet</mission>
+					    	<div class="bar" style="width: 64%"></div>
+						</div>
+					<div class="right-column">
+					    <h3 style="margin: 50px 130px 0 5px;">Explorer l'intersection de la technologie moderne et ancienne, en interfaçant l'orgue à tuyaux avec la numérique, dans le but de tisser de nouvelles expressions artistiques et poétiques, ancrés dans l'histoire, avec une lentille vers l'avenir.</h3>
+					</div>
+				    </div>
+				</section>
+				<section>
+					<h2>Table des matières</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3 id="single-spaced" style="line-height:75%" class="fragment" data-fragment-index="1">Introduction</h3>
+						<h3 id="single-spaced" style="line-height:75%" class="fragment" data-fragment-index="1">1. Contexte de l'hyper-instrument</h3>
+						<h3 id="single-spaced" style="line-height:75%" class="fragment" data-fragment-index="1">2. Construction d'un hyper-orgue</h3>
+							<ul id="single-spaced" class="fragment" data-fragment-index="2">
+								<h4 id="single-spaced" style="line-height:75%">2.1 Contexte</h4>
+								<h4 id="single-spaced" style="line-height:75%">2.2 Synthèse</h4>
+								<h4 id="single-spaced" style="line-height:75%">2.3 Traitement</h4>
+								<h4 id="single-spaced" style="line-height:75%">2.4 Bande fixe</h4>
+							</ul>
+						<h3 id="single-spaced" style="line-height:75%" class="fragment" data-fragment-index="3">3. Mise en pratique : 10 Élégies</h3>
+							<ul id="single-spaced" class="fragment" data-fragment-index="4">
+								<h4 id="single-spaced" style="line-height:75%">3.1 Inspirations</h4>
+								<h4 id="single-spaced" style="line-height:75%">2.3 Limitations</h4>
+							</ul>
+						<h3 id="single-spaced" style="line-height:75%" class="fragment" data-fragment-index="5">Conclusion</h3>
+						<h3 id="single-spaced" style="line-height:75%" class="fragment" data-fragment-index="5">Bibliographie</h3>
+					</ol>
+					<div class="bar"></div>
+				</section>
+
+				<section>
+					<h2>Introduction</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3 class="fragment" data-fragment-index="1">Une fenêtre limitée</h3>
+					</ol>
+					<div class="bar" style="margin-top: 170px;"></div>
+				</section>
+				<section style="text-align: center;">
+					<img class="r-stretch" data-src="cmap.jpg">
+				</section>
+				<section>
+					<h2>Introduction</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Une fenêtre limitée</h3>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Hyper-instrument</li>
+							<li class="fragment" data-fragment-index="2">Hyper-orgue</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 100px;"></div>
+				</section>
+				<section>
+					<h2>1. Contexte de l'hyper-instrument</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Qu'est-ce qu'un hyper-instrument?</h3>
+						<ul>
+							<h4 class="fragment" data-fragment-index="1"><em>« Well, the basic idea of a hyperinstrument is where the technology is built right into the instrument so that the instrument knows how it's being played literally, what the expression is, what the meaning is, what the direction of the music is. » - Todd Machover, 2008.</em></h3>
+							<li class="fragment" data-fragment-index="2">Distingué de la luthérie numérique par l'utilisation des instruments acoustiques.</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 60px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>1. Contexte de l'hyper-instrument</h5></div>
+					<h2>Historique</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Tod Machover et le laboratoire de MIT - 1983</h3>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Clavier et contrôleurs percussifs midi avec un module de synthé en Hyperlisp - 1989</li>
+							<li class="fragment" data-fragment-index="2">L'hyper-violoncelle de Yo-Yo Ma - 1991</li>
+						</ul>
+						<h3 class="fragment" data-fragment-index="3">L'hyper-shaku par Beilharz, Jakovich, et Ferguson – 2006</h3>
+						<h3 class="fragment" data-fragment-index="4">L'hyper-piano par Andrew McPherson - 2012</h3>
+					</ol>
+					<div class="bar" style="margin-top: 60px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>1. Contexte de l'hyper-instrument</h5></div>
+					<h2>Hyper-orgue</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3 li class="fragment" data-fragment-index="1">Orgelpark - 2011</h3>
+					</ol>
+					<div class="bar" style="margin-top: 100px;"></div>
+				</section>
+				<section style="text-align: center;">
+					<img class="r-stretch" data-src="orgelpark1.jpg">
+				</section>
+				<section style="text-align: center;">
+					<img class="r-stretch" data-src="orgelpark2.jpg">
+				</section>
+				<section>
+					<div class="header"><h5>1. Contexte de l'hyper-instrument</h5></div>
+					<h2>Hyper-orgue</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Orgelpark - 2011</h3>
+						<h3 class="fragment" data-fragment-index="1">Lauren Redhead - 2014</h3>
+					</ol>
+					<div class="bar" style="margin-top: 70px;"></div>
+				</section>
+				<section>
+					<h2>2. Construction d'un hyper-orgue</h2>
+					<div class="bar"></div>
+					<div class="bar" style="margin-top: 170px;"></div>
+				</section>
+				<section>
+					<div class="container" style="margin-top:0px">
+					<div class="left-column">
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5></div>
+					<h2>2.1 Contexte</h2>
+					<div style="width: 64%" class="bar"></div>
+					<ol>
+						<h3>Orgue de l'église Saint-Édouard</h3>
+						<ul>
+							<li class="fragment" data-fragment-index="0">Construit en 1913 par Casavant Frères</li>
+							<li class="fragment" data-fragment-index="0">Leur 534e œuvre</li>
+							<li class="fragment" data-fragment-index="0">Orgue symphonique</li>
+							<li class="fragment" data-fragment-index="0">Traction électropneumatique</li>
+							<li class="fragment" data-fragment-index="0">3 claviers</li>
+							<li class="fragment" data-fragment-index="0">53 rangs (Plus de 3000 tuyaux!)</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 0px; width: 64%"></div>
+					</div>
+					<div style="margin-top:50px;" class="right-column">
+						<img data-src="orgue.jpg">
+					</div>
+					</div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5></div>
+					<h2>Trois modalités</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Synthèse</h3>
+						<h3 class="fragment" data-fragment-index="1">Traitement</h3>
+						<h3 class="fragment" data-fragment-index="2">Bande fixe</h3>
+					</ol>
+					<div class="bar" style="margin-top: 70px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5></div>
+					<h2>2.2 Synthèse</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Additive</h3>
+						<h3 class="fragment" data-fragment-index="1">Soustractif</h3>
+					</ol>
+					<div class="bar" style="margin-top: 70px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Additive</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Apte pour le composant harmonique</h3>
+						<h3 class="fragment" data-fragment-index="1">Pour simuler l'orgue à tuyaux</h3>
+						<ul>
+							<li class="fragment" data-fragment-index="2">Enveloppes indépendantes sur chaque harmonique</li>
+							<li class="fragment" data-fragment-index="2">Attaque et decay plus rapide pour les aigues</li>
+							<li class="fragment" data-fragment-index="2">Attaque et decay plus rapide pour les aigues</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 70px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Soustractif</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3 class="fragment" data-fragment-index="1">Apte pour le composant bruité</h3>
+					</ol>
+					<div class="bar" style="margin-top: 70px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Organ Lab</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3 class="fragment" data-fragment-index="1">Pyo</h3>
+						<a href="https://github.com/enh3/organ-lab" class="fragment" data-fragment-index="2">https://github.com/enh3/organ-lab</a>
+					</ol>
+					<div class="bar" style="margin-top: 70px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3 class="fragment" data-fragment-index="1">Pourquoi simuler l'orgue?</h3>
+						<ul>
+							<li class="fragment" data-fragment-index="2">Fréquences continues</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 160px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Pourquoi simuler l'orgue?</h3>
+						<ul>
+							<li>Fréquences continues</li>
+							<audio data-autoplay src="media1.mp3">
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 160px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Pourquoi simuler l'orgue?</h3>
+						<ul>
+							<li>Fréquences continues</li>
+							<li>Interpolation</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 130px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Pourquoi simuler l'orgue?</h3>
+						<ul>
+							<li>Fréquences continues</li>
+							<li>Interpolation</li>
+							<audio data-autoplay src="media2.mp3">
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 130px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Pourquoi simuler l'orgue?</h3>
+						<ul>
+							<li>Fréquences continues</li>
+							<li>Interpolation</li>
+							<li>Sons inharmoniques</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 100px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Pourquoi simuler l'orgue?</h3>
+						<ul>
+							<li>Fréquences continues</li>
+							<li>Interpolation</li>
+							<li>Sons inharmoniques</li>
+							<audio data-autoplay src="media3.mp3">
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 100px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Pourquoi simuler l'orgue?</h3>
+						<ul>
+							<li>Fréquences continues</li>
+							<li>Interpolation</li>
+							<li>Sons inharmoniques</li>
+							<li>Séparation de son harmonique et bruité</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 70px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Pourquoi simuler l'orgue?</h3>
+						<ul>
+							<li>Fréquences continues</li>
+							<li>Interpolation</li>
+							<li>Sons inharmoniques</li>
+							<li>Séparation de son harmonique et bruité</li>
+							<audio data-autoplay src="media4.mp3">
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 70px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Pourquoi simuler l'orgue?</h3>
+						<ul>
+							<li>Fréquences continues</li>
+							<li>Interpolation</li>
+							<li>Sons inharmoniques</li>
+							<li>Séparation de son harmonique et bruité</li>
+							<li>Enveloppes dynamiques</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 40px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Pourquoi simuler l'orgue?</h3>
+						<ul>
+							<li>Fréquences continues</li>
+							<li>Interpolation</li>
+							<li>Sons inharmoniques</li>
+							<li>Séparation de son harmonique et bruité</li>
+							<li>Enveloppes dynamiques</li>
+							<audio data-autoplay src="media5.mp3">
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 40px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Pourquoi simuler l'orgue?</h3>
+						<ul>
+							<li>Fréquences continues</li>
+							<li>Interpolation</li>
+							<li>Sons inharmoniques</li>
+							<li>Séparation de son harmonique et bruité</li>
+							<li>Enveloppes dynamiques</li>
+							<li>Échantillonnage</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 10px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5><h6>2.2. Synthèse</h6></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Pourquoi simuler l'orgue?</h3>
+						<ul>
+							<li>Fréquences continues</li>
+							<li>Interpolation</li>
+							<li>Sons inharmoniques</li>
+							<li>Séparation de son harmonique et bruité</li>
+							<li>Enveloppes dynamiques</li>
+							<li>Échantillonnage</li>
+							<audio data-autoplay src="media6.mp3">
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 10px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Traitement</h3>
+						<ul>
+							<li>Distorsion</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 10px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Traitement</h3>
+						<ul>
+							<li>Distorsion</li>
+							<audio data-autoplay src="media7.mp3">
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 10px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Traitement</h3>
+						<ul>
+							<li>Distorsion</li>
+							<li>Délai</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 10px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Traitement</h3>
+						<ul>
+							<li>Distorsion</li>
+							<li>Délai</li>
+							<audio data-autoplay src="media8.mp3">
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 10px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Traitement</h3>
+						<ul>
+							<li>Distorsion</li>
+							<li>Délai</li>
+							<li>Réverberation</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 10px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. Construction d'un hyper-orgue</h5></div>
+					<h2>Déborder les limites</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Traitement</h3>
+						<ul>
+							<li>Distorsion</li>
+							<li>Délai</li>
+							<li>Réverberation</li>
+							<audio data-autoplay src="media9.mp3">
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 10px;"></div>
+				</section>
+				<section>
+					<div class="header"><h5>2. construction d'un hyper-orgue</h5></div>
+					<h2>bande fixe</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>techniques éléctroacoustiques</h3>
+						<ul>
+							<li class="fragment" data-fragment-index="1">spectral blurring</li>
+							<li class="fragment" data-fragment-index="1">pitch shift</li>
+							<li class="fragment" data-fragment-index="1">réverberation</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 10px;"></div>
+				</section>
+				<section>
+					<h2>3. Mise en pratique : 10 Élégies</h2>
+					<div class="bar"></div>
+					<div class="bar" style="margin-top: 370px;"></div>
+				</section>
+				<section>
+					<div class="container" style="margin-top:0px">
+					<div class="left-column">
+					<div class="header"><h5>3. Mise en pratique : 10 Élégies</h5></div>
+					<h2>3.1 Inspiration</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3 class="fragment" data-fragment-index="1">Études d'hyper-orgue</h3>
+						<h3 class="fragment" data-fragment-index="2">10 élégies de duino de Rainer Maria Rilke</h3>
+						<ul>
+							<li class="fragment" data-fragment-index="2">Corréspondance poétique</li>
+						</ul>
+					</ol>
+					<div class="bar" style="margin-top: 70px;"></div>
+					</div>
+					<div style="margin-top:50px;" class="right-column">
+						<img class="fragment" data-fragment-index="2" style="width:75%; height:auto; margin-top:-20px" data-src="poeme.png">
+					</div>
+				</section>
+				<section><video data-autoplay="false" src="video.mp4"></section>
+				<section>
+					<h2>Conclusion</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3 class="fragment" data-fragment-index="1">Une avenue riche</h3>
+						<h3 class="fragment" data-fragment-index="2">L'intégration / juxtaposition des mondes réel et artificiel</h3>
+						<h3 class="fragment" data-fragment-index="3">L'espace et l'héritage</h3>
+					</ol>
+					<div class="bar" style="margin-top: 10px;"></div>
+				</section>
+				<section>
+					<h2>Bibliographie</h2>
+					<div class="bar"></div>
+					<ol>
+						<h5 style="max-width:90%; font-size:.23em">Alary, O. (2020). Vers une musique hantologique instrumentale: Réflexions sur l’écriture technomorphe dans le contexte de la musique instrumentale contemporaine. https://papyrus.bib.umontreal.ca/xmlui/handle/1866/23593<br><br>
+
+Beilharz, K. A., Jakovich, J., & Ferguson, S. (2006). Hyper-shaku (Border-crossing): Towards the Multi-modal Gesture-controlled Hyper-Instrument. NIME, 352–357.<br><br>
+
+Comerford, P. (1993). Simulating an Organ with Additive Synthesis. Computer Music Journal, 17(2), 55–65. https://doi.org/10.2307/3680869<br><br>
+
+Fidom, J. (2011). Ist das Musik⁈ Die Phenomenologie der Orgelimprovisation: The Orgelpark Research Program. Musiktheorie Und Improvisation, Kongressbericht Der IX. Jahrestagung Der Gesellschaft Für Musiktheorie in Mainz, 140–147.<br><br>
+
+Levenson, T. (1994). Taming the hypercello. The Sciences, 34(4), 15–18.<br><br>
+
+Machover, T. (1984). Computer music with and without instruments. Contemporary Music Review, 1(1), 203–230.<br><br>
+
+Machover, T. (1989). Hyper-instruments: Musically intelligent and interactive performance and creativity systems. ICMC Proc., 186–190.<br><br>
+
+McPherson, A. P., & Kim, Y. E. (2012). The Problem of the Second Performer: Building a Community Around an Augmented Piano. Computer Music Journal, 36(4), 10–27.<br><br>
+
+Redhead, L. (2014). Sound and Space: Music for Organ and Electronics.<br><br>
+
+Redhead, L., & Zaldua, A. (2016). The Organ as Live Interface.<br><br>
+
+</h5>
+					</ol>
+					<div class="bar" style="margin-top: 0px;"></div>
+				</section>
+				<section>
+					<div class="container" style="margin-top:0px">
+					<div class="left-column">
+					<h2>Merci!</h2>
+					<div class="bar"></div>
+					<ol>
+						<h3>Si vous avez des questions :</h3>
+						<h3>net@kjel.ca</h3>
+						<h3 style="margin-left=50px;">Un grand remérciement au fonds du OIRCM</h3>
+						<img style="margin-left=50px; width:15%; height:auto; margin-top:0px" data-src="oicrm.webp">
+					</ol>
+					<div class="bar" style="margin-top: 0px;"></div>
+					</div>
+					<div class="right-column">
+					<div class="qrcode">
+						<h4 style="margin-top:65%; margin-left:55%;">https://bit.ly/3Fbzn5c</h4>
+						<img style="margin-top:0%; margin-left:55%; width:30%; height:auto;" data-src="qrcode.png">
+					</div>
+					</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+		<script src="../plugin/notes/notes.js"></script>
+		<script src="../plugin/markdown/markdown.js"></script>
+		<script src="../plugin/highlight/highlight.js"></script>
+		<script>
+  var Webflow = Webflow || [];
+  Webflow.push(function() {
+   function togglePlayPause() {
+      $('video').each(function() {
+       if (this.paused) {
+         this.play();
+       } else {
+         this.pause();
+       }
+     });
+   }
+   function toggleVisibility() {
+     $('video').each(function() {
+     var opacity = $(this).css('opacity') == 0 ? 1 : 0
+     $(this).css("opacity", opacity);
+   });
+   }
+   $('#video-toggle').click(togglePlayPause);
+});
+
+</script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				width: 960,
+				height: 500,
+				hash: true,
+				controls: true,
+				controlsBackArrows: 'hidden',
+				progress: false,
+				transition: 'none',
+				margin: 0,
+				maxScale: 4,
+				backgroundTransition: 'none',
+				center: false,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			Reveal.configure({
+			keyboard: {
+    				13: 'next',
+  				}
+			});
+		</script>
+	</body>
+</html>
