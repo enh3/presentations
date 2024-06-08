@@ -507,6 +507,14 @@ element.style {
     /* Adjust styling for the left-side text as needed */
 }
 
+.logos {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Add space between items */
+    margin-left: 115px;
+}
+
 body .reveal .invisible {
     color: transparent;
     background-color: transparent;
